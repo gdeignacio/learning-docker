@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 ADD . /app
 
-#RUN apt-get update -y
+RUN apt-get update -y
 
 #RUN apt-get install -y python-pip python-dev build-essential
 
