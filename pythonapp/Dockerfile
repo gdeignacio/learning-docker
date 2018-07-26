@@ -9,7 +9,8 @@ ADD . /app
 
 RUN apt-get update -y
 
-RUN apt-get install -y python-pip python-dev build-essential
+#RUN apt-get install -y python-pip python-dev build-essential
+RUN apt-get install -y build-essential
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
